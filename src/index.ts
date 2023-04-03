@@ -1,11 +1,10 @@
 import express from "express";
-import { Prisma, PrismaClient } from "@prisma/client";
+
 import "express-async-errors";
 import { errorHandler } from "./utils/error-handler";
 import { globalRouter } from "./global-router";
 import morgan from "morgan";
 
-const prisma = new PrismaClient();
 const app = express();
 
 app.use(morgan("dev"));
