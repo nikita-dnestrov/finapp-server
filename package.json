@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "tsnd src/index.ts"
+    "start": "tsnd src/index.ts",
+    "build": "tsc",
+    "prod": "node build/index.js"
   },
   "dependencies": {
     "@prisma/client": "4.12.0",
