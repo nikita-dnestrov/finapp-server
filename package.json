@@ -5,7 +5,8 @@
   "scripts": {
     "start": "tsnd src/index.ts",
     "build": "tsc",
-    "prod": "node build/index.js"
+    "prod": "node build/index.js",
+    "test": ""
   },
   "dependencies": {
     "@prisma/client": "4.12.0",
