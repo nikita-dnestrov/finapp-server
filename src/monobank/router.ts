@@ -4,4 +4,4 @@ import { monobankController } from "./controller";
 export const monobankRouter = Router();
 
 monobankRouter.get("/test", monobankController.test);
-monobankRouter.post("/");
+monobankRouter.post("/populate", monobankController.test);
