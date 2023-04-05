@@ -4,16 +4,12 @@ import "express-async-errors";
 import { errorHandler } from "./utils/error-handler";
 import { globalRouter } from "./global-router";
 import morgan from "morgan";
-
-import { Transaction } from "@prisma/client";
-const { setIntervalAsync } = require("set-interval-async");
-import dayjs from "dayjs";
-import axios, { AxiosResponse } from "axios";
-import { transactionsRef, prisma } from "./db";
+import cors from "cors";
 
 const app = express();
 
 app.use(morgan("dev"));
+app.use(cors());
 app.set("trust proxy", true);
 app.use(express.json());
 app.use(errorHandler);
